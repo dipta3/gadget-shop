@@ -1,6 +1,6 @@
 import React from 'react';
 
-const InfoCard = ({ img, cardTitle, bgClass, cardDes }) => {
+const InfoCard = ({ img, cardTitle, bgClass, cardDes, cardContract }) => {
     return (
         <div class={`card lg:card-side bg-base-100 shadow-xl rounded-tl-lg ${bgClass}`}>
             <figure>
@@ -8,7 +8,10 @@ const InfoCard = ({ img, cardTitle, bgClass, cardDes }) => {
             </figure>
             <div class="card-body">
                 <h2 class="card-title">{cardTitle}</h2>
-                <p>{cardDes}</p>
+                <div>
+                    <p>{cardDes}</p>
+                    <p>{cardContract}</p>
+                </div>
                 <div class="card-actions justify-end">
                 </div>
             </div>
